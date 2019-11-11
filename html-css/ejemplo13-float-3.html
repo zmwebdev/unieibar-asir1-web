@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33%;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Equal Height Boxes</h2>
+<p>Floating boxes with equal heights:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+    <h2>Box 1</h2>
+    <p>Some content, some content, some content</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+    <h2>Box 2</h2>
+    <p>Some content, some content, some content</p>
+    <p>Some content, some content, some content</p>
+    <p>Some content, some content, some content</p>
+  </div>
+  <div class="box" style="background-color:#bbb">
+      <h2>Box 3</h2>
+      <p>Some content, some content, some content</p>
+  </div>
+  
+</div>
+
+<p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+<p>Go back to the tutorial and find another solution, if this is not what you want.</p>
+
+</body>
+</html>
