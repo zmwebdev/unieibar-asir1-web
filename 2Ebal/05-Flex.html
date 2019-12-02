@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.s1 {
+    flex-grow: 1;
+    order:2;
+}
+
+.s2 {
+    flex-grow: 1;
+    order:1;
+}
+.s3 {
+    flex-grow: 8;
+    order:3;
+}
+
+
+</style>
+</head>
+<body>
+<h1>The flex-grow Property</h1>
+
+<p>Make the third flex item grow eight times faster than the other flex items:</p>
+
+<div class="flex-container">
+  <div class="s1">1</div>
+  <div class="s2">2</div>
+  <div class="s3">3</div>
+</div>
+
+</body>
+</html>
