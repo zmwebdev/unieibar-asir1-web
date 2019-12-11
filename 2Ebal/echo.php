@@ -1,9 +1,11 @@
 <?php
 
 /*echo "<h1>";*/
-echo $_GET["firstname"];
+if (isset($_GET["firstname"]))
+    echo $_GET["firstname"];
 /*echo "</h1>";*/
 echo "<br>";
-echo $_GET["lastname"];
+if (isset($_GET["firstname"]))
+    echo $_GET["lastname"];
 
 //header("Location: new.html"); /* Redirect browser */
