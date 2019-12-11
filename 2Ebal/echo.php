@@ -20,4 +20,14 @@ echo "<br>";
 if (isset($_GET["have_a_bike"]))
     echo $_GET["have_a_bike"];
 
-//header("Location: new.html"); /* Redirect browser */
+        
+echo "<br>";
+if (isset($_GET["message"]))
+    echo $_GET["message"];
+    
+        
+echo "<br>";
+if (isset($_GET["carlist"]))
+    echo $_GET["carlist"];
+    
+    //header("Location: new.html"); /* Redirect browser */
