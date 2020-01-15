@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        .cuadrado {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            box-shadow: 10px 10px;
+            position:absolute;
+            top:"0px";
+            left:"0px";
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cuadrado1" class="cuadrado"></div>
+
+    <script>
+
+
+        function keyboard (key) {
+            //console.log(key.keyCode)
+
+               
+            if (key.keyCode == 39) {
+                console.log("right");
+                x = x + dx; 
+            } else if (key.keyCode == 37) {
+                console.log("left")
+                x = x - dx; 
+            } else if (key.keyCode == 38) {
+                console.log("top")
+                y = y - dy; 
+            } else if (key.keyCode == 40) {
+                console.log("down")
+                y = y + dy; 
+            }
+
+            c1.style.left = x + "px";
+            c1.style.top = y + "px";
+            
+        }
+
+
+        // main program
+
+        //
+        c1 = document.getElementById("cuadrado1");
+        document.addEventListener("keydown", keyboard)
+        //
+        x = 15;
+        dx = 10;
+        y = 15;
+        dy = 10;
+        c1.style.left = x + "px";
+        c1.style.top = y + "px";
+        //
+    
+        
+    </script>
+
+</body>
+</html>

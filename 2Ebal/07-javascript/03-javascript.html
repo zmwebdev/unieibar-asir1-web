@@ -2,33 +2,10 @@
 <html>
 <body>
 
-<button id="boton1" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button id="boton2" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-<button id="boton0" onclick="mostrar()">Start</button>
-
-<script>
-
-function ocultar() {
-    document.getElementById("myImag e").style.display = "none";
-    document.getElementById("boton1").style.display = "none";
-    document.getElementById("boton2").style.display = "none";
-}
-
-function mostrar() {
-    document.getElementById("myImage").style.display = "inline";
-    document.getElementById("boton1").style.display = "inline";
-    document.getElementById("boton2").style.display = "inline";
-    document.getElementById("boton0").style.display = "none";
-}
-
-ocultar();
-
-
-</script>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
 
 </body>
-</html>
+</html> 

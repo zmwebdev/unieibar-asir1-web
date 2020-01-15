@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<style>
+p.solid {border-style: solid;}
+</style>
+<script>
+function suma() {
+    x = document.getElementById("numero_x").value;
+    y = document.getElementById("numero_y").value; 
+    
+    x = parseInt(x);
+    y = parseInt(y);
+    
+    document.getElementById("resultado").innerHTML = x + y;
+}
+
+function resta() {
+    x = document.getElementById("numero_x").value;
+    y = document.getElementById("numero_y").value; 
+    
+    x = parseInt(x);
+    y = parseInt(y);
+    
+    document.getElementById("resultado").innerHTML = x - y;
+}
+
+function cls() {    
+    document.getElementById("resultado").innerHTML = 0;
+    document.getElementById("numero_x").value = "";
+    document.getElementById("numero_y").value = "";
+}
+</script>
+
+<h1>Calculadora</h1>
+<p class="solid" id="resultado">0</p>
+<input type="text" id="numero_x"><br>
+<input type="text" id="numero_y"><br>
+<button type="button" onclick="suma()">+</button>
+<button type="button" onclick="resta()">-</button>
+<button type="button" onclick="cls()">cls</button>
+</body>
+</html>

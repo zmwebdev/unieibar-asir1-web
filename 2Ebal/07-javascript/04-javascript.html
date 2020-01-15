@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*box-shadow: 10px 10px;*/
+            position: absolute;
+            top:"0px";
+            left:"0px";
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cuadrado1" class="cuadrado"></div>
+
+    <script>
+        // comentario
+        function ocultar_cuadrado () {
+            c1.style.visibility = "hidden"
+        }
+
+        c1 = document.getElementById("cuadrado1")
+        c1.addEventListener("click", ocultar_cuadrado);
+    
+    </script>
+
+</body>
+</html>

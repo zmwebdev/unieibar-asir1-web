@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="mostrar_cartas()">ON</button>
+
+<img id="carta_as" src="as.png" style="width:100px">
+<img id="carta_K" src="K.png" style="width:100px">
+<img id="carta_Q" src="Q.png" style="width:100px">
+
+<button onclick="ocultar_cartas()">OFF</button>
+
+<script>
+    function ocultar_cartas() {
+        document.getElementById('carta_as').src='reverso.png';
+        document.getElementById('carta_K').src='reverso.png';
+        document.getElementById('carta_Q').src='reverso.png';
+    }
+    
+    function mostrar_cartas() {
+        document.getElementById('carta_as').src='as.png';
+        document.getElementById('carta_K').src='K.png';
+        document.getElementById('carta_Q').src='Q.png';
+    }
+    
+</script>
+
+
+</body>
+</html>
