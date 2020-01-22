@@ -26,12 +26,20 @@
 </head>
 <body>
     <div>
-        <div onclick="ocultar_cuadrado()" id="cuadrado1" class="cuadrado"></div>
+        <div onmouseover="ocultar_cuadrado()" onmouseout="mostrar_cuadrado()" id="cuadrado1" class="cuadrado"></div>
     </div>
     <script>
         function ocultar_cuadrado() {
-            document.getElementById("cuadrado1").style.visibility = "hidden";
+            //document.getElementById("cuadrado1").style.visibility = "hidden";
+            document.getElementById("cuadrado1").style.backgroundColor = "black"; 
         }
+
+        function mostrar_cuadrado() {
+            //document.getElementById("cuadrado1").style.visibility = "";
+            document.getElementById("cuadrado1").style.backgroundColor = "red"; 
+        }
+
+
         /*
         function ocultar_cuadrado () {
             c1.style.visibility = "hidden"
