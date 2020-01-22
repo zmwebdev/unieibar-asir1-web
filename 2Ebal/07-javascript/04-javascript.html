@@ -7,33 +7,42 @@
 
     <style>
         body {
-            background-color: white;
+            background-color: black;
         }
         .cuadrado {
             width: 100px;
             height: 100px;
             background-color: red;
             /*box-shadow: 10px 10px;*/
+            /*
             position: absolute;
             top:"0px";
             left:"0px";
+            */
         }
+
     </style>
 
 </head>
 <body>
-    <div id="cuadrado1" class="cuadrado"></div>
-
+    <div>
+        <div onclick="ocultar_cuadrado()" id="cuadrado1" class="cuadrado"></div>
+    </div>
     <script>
-        // comentario
+        function ocultar_cuadrado() {
+            document.getElementById("cuadrado1").style.visibility = "hidden";
+        }
+        /*
         function ocultar_cuadrado () {
             c1.style.visibility = "hidden"
         }
 
         c1 = document.getElementById("cuadrado1")
         c1.addEventListener("click", ocultar_cuadrado);
-    
+        */
+
     </script>
 
 </body>
+
 </html>
