@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+
+/*
+OHARRA: Ariketa hau egin baino lehen
+paperean algoritmoa egin 
+                      |
+            ----< (x <=y) >----
+            |
+   ----< (y<=z) >
+   |
+ x<=y<=z    
+*/
+
+var x = 0;
+var y = 5;
+var z = 3;
+
+function order_xyz(x, y, z){
+    if (x <= y) {
+        if (x <= z) {
+            // x txikiena da
+            if (y <= z) {
+                console.log(x + "<=" + y + "<=" + z);
+            } else {
+                console.log(x + "<=" + z + "<=" + y);
+            }
+        } else {
+            // z txikiena da
+            console.log(z + "<=" + x + "<=" + y);
+        }
+    } else {
+        // y < x
+        if (y <= z) {
+            // y txikiena da
+            if (x <= z) {
+                console.log(y + "<=" + x + "<=" + z);
+            } else {
+                console.log(y + "<=" + z + "<=" + x);
+            }
+        } else {
+            // z txikiena da
+            console.log(z + "<=" + y + "<=" + x);
+        }
+
+    }
+}
+
+
+</script>
+
+
+</body>
+</html>
