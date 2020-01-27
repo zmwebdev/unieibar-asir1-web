@@ -10,19 +10,21 @@
 /*
 OHARRA: Ariketa hau egin baino lehen
 paperean algoritmoa egin 
-                      |
-            ----< (x <=y) >----
-            |
-   ----< (y<=z) >
-   |
- x<=y<=z    
+                                            |
+                            --------------(x<=y)-----------
+                            |                              | 
+                      ----(x<=z)----                 ----(y<=z)----
+                      |            |                 |             | 
+               ----(y<=z)----   [z<=x<=y]      ----(x<=z)----  [z<=y<=x]
+               |            |                  |            |
+           [x<=y<=z]    [x<=y<=z]          [y<=x<=z]    [y<=z<=x]
 */
 
 var x = 0;
 var y = 5;
 var z = 3;
 
-function order_xyz(x, y, z){
+function sort_xyz(x, y, z){
     if (x <= y) {
         if (x <= z) {
             // x txikiena da
