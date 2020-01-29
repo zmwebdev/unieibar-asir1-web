@@ -5,8 +5,13 @@
 </head>
 <body>
 
-<script>
+<input type="text" id="x">
+<input type="text" id="y">
+<input type="text" id="z">
+<input type="button" value="sort" onclick="sort_xyz_input()">
+<p id="resultado"></p>
 
+<script>
 /*
 OHARRA: Ariketa hau egin baino lehen
 paperean algoritmoa egin 
@@ -20,22 +25,27 @@ paperean algoritmoa egin
            [x<=y<=z]    [x<=y<=z]          [y<=x<=z]    [y<=z<=x]
 */
 
-var x = 0;
-var y = 5;
-var z = 3;
 
 function sort_xyz(x, y, z){
+
+    n1 = 0;
+    n2 = 0;
+    n3 = 0;
+
     if (x <= y) {
         if (x <= z) {
             // x txikiena da
             if (y <= z) {
                 console.log(x + "<=" + y + "<=" + z);
+                n1=x; n2=y; n3=z;
             } else {
                 console.log(x + "<=" + z + "<=" + y);
+                n1=x; n2=z; n3=y;
             }
         } else {
             // z txikiena da
             console.log(z + "<=" + x + "<=" + y);
+            n1=z; n2=x; n3=y;
         }
     } else {
         // y < x
@@ -43,15 +53,31 @@ function sort_xyz(x, y, z){
             // y txikiena da
             if (x <= z) {
                 console.log(y + "<=" + x + "<=" + z);
+                n1=y; n2=x; n3=z;
             } else {
                 console.log(y + "<=" + z + "<=" + x);
+                n1=y; n2=z; n3=x;
             }
         } else {
             // z txikiena da
-            console.log(z + "<=" + y + "<=" + x);
+            n1=z; n2=y; n3=x;
         }
-
     }
+
+    console.log(n1 + "<=" + n2 + "<=" + n3);
+    
+    return {x:n1, y:n2, z:n3};
+
+}
+
+function sort_xyz_input() {
+    x = parseInt(document.getElementById("x").value);
+    y = parseInt(document.getElementById("y").value);
+    z = parseInt(document.getElementById("z").value);
+
+    sorted_nums = sort_xyz(x,y,z);
+    console.log(sorted_nums);
+    document.getElementById("resultado").innerHTML = sorted_nums.x+"<="+sorted_nums.y+"<="+sorted_nums.z;  
 }
 
 
