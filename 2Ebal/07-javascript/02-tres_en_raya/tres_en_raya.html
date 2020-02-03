@@ -40,17 +40,64 @@
 </div>
 
 <script>
-var turno = true; 
+var turno = 1; //empieza el jugador 1 
+/*
+tablero: 
+0: vacío, 
+1: ficha jugador 1,
+2: ficha jugador 2
+*/
+var tablero = [
+                [0,0,0],
+                [0,0,0],
+                [0,0,0]
+            ];
 
-function next_turno(){
-    if (turno) {
-
-    } else {
-
-    }
-
-    turno = !turno;
+function tablero_print(){
+    console.log("["+tablero[0][0]+","+tablero[0][1]+","+tablero[0][2]+"]\n["+tablero[1][0]+","+tablero[1][1]+","+tablero[1][2]+"]\n["+tablero[2][0]+","+tablero[2][1]+","+tablero[2][2]+"]\n");
 }
+
+
+function poner_ficha(x,y){
+    // casilla ocupada?
+    if (tablero[x][y] != 0) {
+        console.log("casilla ocupada");
+    } else {
+        tablero[x][y] = turno;
+        if (turno==1)
+            turno=2;
+        else
+            turno=1;
+    }
+    // 
+}
+
+function he_ganado(jugador){
+    
+    if ((tablero[0][0]==jugador && tablero[0][1]==jugador && tablero[0][2]==jugador) ||
+        (tablero[1][0]==jugador && tablero[1][1]==jugador && tablero[1][2]==jugador) ||
+        (tablero[2][0]==jugador && tablero[2][1]==jugador && tablero[2][2]==jugador) ||
+        (tablero[0][0]==jugador && tablero[1][1]==jugador && tablero[1][1]==jugador) ||
+        (tablero[0][0]==jugador && tablero[1][0]==jugador && tablero[2][0]==jugador) ||
+        (tablero[0][1]==jugador && tablero[1][1]==jugador && tablero[2][1]==jugador) ||
+        (tablero[0][2]==jugador && tablero[1][2]==jugador && tablero[2][2]==jugador)
+    ){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+function todo_ocupado(){
+    for (var i=0; i<3; i++)
+        for (var j=0; j<3; j++)
+            if (tablero[i][j]!=0)
+                return true;
+
+    return false;
+}
+
 </script>
 
 </body>
