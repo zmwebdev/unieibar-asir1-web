@@ -11,11 +11,13 @@ Esta semana corresponde con los días lectivos 16 y 18 de Marzo
 
 Tuturial:
 
-
-
-Ejercicio:
-
-Teneis que realizar una página usando lo que habeis aprendido hasta ahora. E
+- https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_typography.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_colors.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_images.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_tables.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp
 
 
 ## Enlaces
