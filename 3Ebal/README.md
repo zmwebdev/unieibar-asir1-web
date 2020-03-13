@@ -1,4 +1,4 @@
-# 3. Ebaluación
+# 3. Evaluación
 
 ## Ejercicios
 
