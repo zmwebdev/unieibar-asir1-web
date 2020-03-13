@@ -1,4 +1,4 @@
-# 3. Ebal
+# 3. Ebaluación
 
 ## Ejercicios
 
