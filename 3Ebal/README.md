@@ -19,6 +19,9 @@ Tutorial:
 - https://www.w3schools.com/bootstrap4/bootstrap_tables.asp
 - https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp
 
+Ejercicio de la semana:
+
+Hacer una página con lo aprendido en el tutorial y subirlo a github.
 
 ## Enlaces
 
