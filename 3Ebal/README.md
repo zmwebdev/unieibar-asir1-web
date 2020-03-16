@@ -9,7 +9,7 @@ Vamos a seguir el tutorial de https://www.w3schools.com/bootstrap/bootstrap_ver.
 
 Esta semana corresponde con los días lectivos 16 y 18 de Marzo
 
-Tuturial:
+Tutorial:
 
 - https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
 - https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
