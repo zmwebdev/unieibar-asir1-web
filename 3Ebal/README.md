@@ -23,6 +23,42 @@ Ejercicio de la semana:
 
 Hacer una página con lo aprendido en el tutorial y subirlo a github.
 
+### Semana 2
+
+Esta semana corresponde con los días lectivos 23 y 25 de Marzo
+
+Tutorial:
+
+- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_modal.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_tooltip.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_popover.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_toast.asp
+
+Ejercicio de la semana:
+
+Hacer una página con lo aprendido en los tutoriales y subirlo a github. Si queréis podéis continuar la pagina de la semana anterior o empezar una nueva.
+
+<!--
+### Semana 3
+
+Esta semana corresponde con los días lectivos 30 de Marzo y 1 de Abril. Lo dedicaremos a los formularios.
+
+Tutorial:
+
+- https://www.w3schools.com/bootstrap4/bootstrap_forms.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_forms_input_group.asp
+- https://www.w3schools.com/bootstrap4/bootstrap_forms_custom.asp
+
+Ejercicio de la semana:
+
+Hacer una página con lo aprendido en los tutoriales y subirlo a github. Si queréis podéis continuar la pagina de la semana anterior o empezar una nueva. Para comprobar los formularios recordar el ejercicio que hicimos en la evaluación anterior: [2Ebal/06-forms-01.html](https://github.com/zmwebdev/unieibar-asir1-web/blob/master/2Ebal/06-forms-01.html), [2Ebal/echo.php](https://github.com/zmwebdev/unieibar-asir1-web/blob/master/2Ebal/echo.php)
+-->
+
 ## Enlaces
 
 - https://getbootstrap.com/
