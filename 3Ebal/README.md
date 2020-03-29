@@ -42,7 +42,7 @@ Ejercicio de la semana:
 
 Hacer una página con lo aprendido en los tutoriales y subirlo a github. Si queréis podéis continuar la pagina de la semana anterior o empezar una nueva.
 
-<!--
+
 ### Semana 3
 
 Esta semana corresponde con los días lectivos 30 de Marzo y 1 de Abril. Lo dedicaremos a los formularios.
@@ -57,7 +57,7 @@ Tutorial:
 Ejercicio de la semana:
 
 Hacer una página con lo aprendido en los tutoriales y subirlo a github. Si queréis podéis continuar la pagina de la semana anterior o empezar una nueva. Para comprobar los formularios recordar el ejercicio que hicimos en la evaluación anterior: [2Ebal/06-forms-01.html](https://github.com/zmwebdev/unieibar-asir1-web/blob/master/2Ebal/06-forms-01.html), [2Ebal/echo.php](https://github.com/zmwebdev/unieibar-asir1-web/blob/master/2Ebal/echo.php)
--->
+
 
 ## Enlaces
 
